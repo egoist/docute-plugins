@@ -1,6 +1,6 @@
 {
   "name": "@leptosia/docute-mermaid",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -19,6 +19,9 @@
   "bili": {
     "filename": "index.js",
     "name": "docuteMermaid",
-    "format": ["umd", "umd-min"]
+    "format": [
+      "umd",
+      "umd-min"
+    ]
   }
 }
