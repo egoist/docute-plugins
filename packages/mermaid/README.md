@@ -23,6 +23,10 @@ new Docute({
 })
 ```
 
+## Options
+
+Mermaid configuration object.
+
 ## License
 
 MIT &copy; [LEPTOSIA](https://leptosia.org)
