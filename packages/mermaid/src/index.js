@@ -1,6 +1,6 @@
 /* globals mermaid */
 
-export default opts => ({
+export default ({ initOpts, code = true } = {}) => ({
   name: '@mermaid',
   extend(api) {
     if (typeof mermaid === 'undefined' || !mermaid.init) {
@@ -10,18 +10,20 @@ export default opts => ({
       return
     }
 
-    api.extendMarkedRenderer(renderer => {
-      const origCode = renderer.code
-      renderer.code = function(code, lang, escaped, opts) {
-        if (lang === 'mermaid') {
-          return `<div class="mermaid">${code}</div>`
+    if (code) {
+      api.extendMarkedRenderer(renderer => {
+        const origCode = renderer.code
+        renderer.code = function(code, lang, escaped, opts) {
+          if (lang === 'mermaid') {
+            return `<div class="mermaid">${code}</div>`
+          }
+          return origCode.call(this, code, lang, escaped, opts)
         }
-        return origCode.call(this, code, lang, escaped, opts)
-      }
-    })
+      })
+    }
 
     api.onContentUpdated(() => {
-      mermaid.init(opts, '.mermaid')
+      mermaid.init(initOpts, '.mermaid')
     })
   }
 })

@@ -23,9 +23,18 @@ new Docute({
 })
 ```
 
-## Options
+## options
 
-Mermaid configuration object.
+### options.initOpts
+
+Options for `mermaid.init()`.
+
+### options.code
+
+- Type: `boolean`
+- Default: `true`
+
+Convert code fences whose language is `mermaid` to charts.
 
 ## License
 
