@@ -23,18 +23,40 @@ new Docute({
 })
 ```
 
+Then you can use code fences to write mermaid code to generate charts:
+
+````markdown
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
+
 ## options
 
 ### options.initOpts
 
 Options for `mermaid.init()`.
 
-### options.code
+### options.evaluateOnly
 
 - Type: `boolean`
-- Default: `true`
+- Default: `false`
 
-Convert code fences whose language is `mermaid` to charts.
+Only convert code to chart only when `evaluate: true`:
+
+````markdown
+```mermaid {evaluate: true}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
 
 ## License
 
