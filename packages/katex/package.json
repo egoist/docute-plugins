@@ -1,0 +1,27 @@
+{
+  "name": "@leptosia/docute-katex",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bili",
+    "prepublishOnly": "npm run build"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bili": "^3.1.2"
+  },
+  "bili": {
+    "filename": "index.js",
+    "name": "docuteKatex",
+    "format": [
+      "umd",
+      "umd-min"
+    ]
+  }
+}
