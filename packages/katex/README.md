@@ -28,7 +28,7 @@ new Docute({
 
 Then you can use Vue components to write Tex expressions:
 
-````html
+````vue
 <InlineMath>c = \\pm\\sqrt{a^2 + b^2}</InlineMath>
 <!-- or -->
 <InlineMath math="c = \\pm\\sqrt{a^2 + b^2}"></InlineMath>
