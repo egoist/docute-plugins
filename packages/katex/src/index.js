@@ -46,7 +46,7 @@ export default () => ({
     api.extendMarkedRenderer(renderer => {
       const origCode = renderer.code
       renderer.code = function(code, lang, escaped, opts) {
-        if (lang === 'katex' && opts.evaluate) {
+        if (lang === 'katex' && opts && opts.evaluate) {
           return `<BlockMath>${code}</BlockMath>`
         }
         return origCode.call(this, code, lang, escaped, opts)

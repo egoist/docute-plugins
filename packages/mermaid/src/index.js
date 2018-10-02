@@ -13,6 +13,7 @@ export default ({ initOpts, evaluateOnly = false } = {}) => ({
     api.extendMarkedRenderer(renderer => {
       const origCode = renderer.code
       renderer.code = function(code, lang, escaped, opts) {
+        opts = opts || {}
         if (lang === 'mermaid' && (!evaluateOnly || opts.evaluate)) {
           return `<div class="mermaid">${code}</div>`
         }
