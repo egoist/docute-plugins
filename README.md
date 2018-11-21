@@ -5,6 +5,7 @@
 - [@leptosia/docute-mermaid](./packages/mermaid)
 - [@leptosia/docute-google-analytics](./packages/google-analytics)
 - [@leptosia/docute-katex](./packages/katex)
+- [@leptosia/docute-run-code](./packages/run-code)
 
 ## Community Plugins
 
