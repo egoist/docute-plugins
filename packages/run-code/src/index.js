@@ -83,7 +83,7 @@ export default globalOpts => ({
         }
         
         if (node.opts.updateCode) {
-          code = opts.updateCode(code, lang)
+          code = node.opts.updateCode(code, lang)
         }
 
         iframe.contentWindow.ResizeObserver = ResizeObserver
