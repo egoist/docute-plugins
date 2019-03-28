@@ -3,5 +3,10 @@
   "name": "docute-plugins",
   "version": "1.0.0",
   "license": "MIT",
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  }
 }

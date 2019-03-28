@@ -1,4 +1,4 @@
-# @leptosia/docute-google-analytics
+# docute-google-analytics
 
 Using Google Analytics in Docute.
 
@@ -8,7 +8,7 @@ First load this plugin via `<script>` tag:
 
 ```html
 <!-- Load these after docute.js -->
-<script src="https://cdn.jsdelivr.net/npm/@leptosia/docute-google-analytics@1/dist/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docute-google-analytics@1/dist/index.min.js"></script>
 ```
 
 This plugin is exposed as `window.docuteGoogleAnalytics`:

@@ -1,4 +1,4 @@
-# @leptosia/docute-katex
+# docute-katex
 
 Using [Katex](https://katex.org/) (The fastest math typesetting library for the web) in Docute.
 
@@ -12,7 +12,7 @@ First load this plugin via `<script>` tag:
 
 <!-- Load the scripts after docute.js -->
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@leptosia/docute-katex@1/dist/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docute-katex@1/dist/index.min.js"></script>
 ```
 
 This plugin is exposed as `window.docuteKatex`:

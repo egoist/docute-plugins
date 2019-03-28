@@ -2,10 +2,10 @@
 
 ## Official Docute Plugins
 
-- [@leptosia/docute-mermaid](./packages/mermaid)
-- [@leptosia/docute-google-analytics](./packages/google-analytics)
-- [@leptosia/docute-katex](./packages/katex)
-- [@leptosia/docute-run-code](./packages/run-code)
+- [docute-mermaid](./packages/mermaid)
+- [docute-google-analytics](./packages/google-analytics)
+- [docute-katex](./packages/katex)
+- [docute-run-code](./packages/run-code)
 
 ## Community Plugins
 
@@ -18,28 +18,35 @@
 
 ```json
 {
-  "name": "@leptosia/docute-foo",
+  "name": "docute-foo",
   "version": "0.0.0",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "bili",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "yarn build"
   },
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "files": [
     "dist"
   ],
   "license": "MIT",
   "devDependencies": {
-    "bili": "^3.1.2"
-  },
-  "bili": {
-    "filename": "index.js",
-    "name": "docuteFoo",
-    "format": ["umd", "umd-min"]
+    "bili": "^4.7.2"
   }
 }
 ```
-3. Create `src/index.js`
+3. Create a `bili.config.ts` with following contents:
+
+```ts
+import {Config} from 'bili'
+
+const config: Config = {
+  output: {
+    fileName: 'index[min].js',
+    format: ['umd', 'umd-min'],
+    moduleName: '{{ replace this with moduleName }}'
+  }
+}
+
+export default config
+```
+4. Create `src/index.js`
