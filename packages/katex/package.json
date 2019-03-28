@@ -1,6 +1,6 @@
 {
   "name": "docute-katex",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "scripts": {
     "build": "bili",
     "prepublishOnly": "yarn build"
