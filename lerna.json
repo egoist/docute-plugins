@@ -3,9 +3,6 @@
     "packages/*"
   ],
   "version": "independent",
-  "command": {
-    "bootstrap": {
-      "hoist": ["bili"]
-    }
-  }
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }
