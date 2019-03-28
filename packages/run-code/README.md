@@ -8,7 +8,7 @@ First load this plugin via `<script>` tag:
 
 ```html
 <!-- Load these after docute.js -->
-<script src="https://cdn.jsdelivr.net/npm/docute-run-code@1/dist/index.min.js"></script>
+<script src="https://unpkg.com/docute-run-code@1/dist/index.min.js"></script>
 ```
 
 This plugin is exposed as `window.docuteRunCode`:

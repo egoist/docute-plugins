@@ -8,11 +8,11 @@ First load this plugin via `<script>` tag:
 
 ```html
 <!-- Load the CSS in <head> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css">
+<link rel="stylesheet" href="https://unpkg.com/katex@0.10.0-rc.1/dist/katex.min.css">
 
 <!-- Load the scripts after docute.js -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docute-katex@1/dist/index.min.js"></script>
+<script defer src="https://unpkg.com/katex@0.10.0-rc.1/dist/katex.min.js"></script>
+<script src="https://unpkg.com/docute-katex@1/dist/index.min.js"></script>
 ```
 
 This plugin is exposed as `window.docuteKatex`:

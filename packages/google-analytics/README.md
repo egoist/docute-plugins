@@ -8,7 +8,7 @@ First load this plugin via `<script>` tag:
 
 ```html
 <!-- Load these after docute.js -->
-<script src="https://cdn.jsdelivr.net/npm/docute-google-analytics@1/dist/index.min.js"></script>
+<script src="https://unpkg.com/docute-google-analytics@1/dist/index.min.js"></script>
 ```
 
 This plugin is exposed as `window.docuteGoogleAnalytics`:
